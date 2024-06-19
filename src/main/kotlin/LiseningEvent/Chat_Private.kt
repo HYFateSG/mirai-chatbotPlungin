@@ -33,7 +33,7 @@ fun chatPrivate (key : String) {
             //    if (apikey == "Your apiKey") {
             //        "你没有配置apikey\n请输入/key~你的key"
             //    } else {
-            //        if (apikey.matches(tokenPattern)) {
+            //        if (apikey.matches(tokenPattern3)) {
             //            Openai_http_api(getmsg, ID = ID,role = role)
             //        } else {
             //            "格式错误"
