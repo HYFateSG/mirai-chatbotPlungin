@@ -14,6 +14,7 @@ class ChatBot{
         var apikey = File(path_Apikey).readText()//你的apikey
         val tokenPattern3 = "sk-(?:[A-Za-z0-9+]{4})*(?:[A-Za-z0-9+]{2}==|[A-Za-z0-9+]{3}=)?".toRegex()
         val tokenPattern4 = "sk-(?:[A-Za-z0-9+]{4})-(?:[A-Za-z0-9+]{4})*(?:[A-Za-z0-9+]{2}==|[A-Za-z0-9+]{3}=)?".toRegex()
+        val tokenPatternX = "sk-(?:[A-Za-z0-9+]{4})-(?:[A-Za-z0-9+])*-(?:[A-Za-z0-9+])*".toRegex()
 
         @JvmStatic
         fun chat() = runBlocking {
