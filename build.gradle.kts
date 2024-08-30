@@ -17,3 +17,9 @@ dependencies{
     implementation("com.squareup.okhttp3:okhttp:4.9.1")
     implementation ("org.json:json:20210307")
 }
+
+tasks.jar {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    manifest.attributes["Main-Class"] = "Main"
+    from(configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) })
+}
